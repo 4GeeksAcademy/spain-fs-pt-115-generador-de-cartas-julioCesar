@@ -1,5 +1,96 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    background: white;
+body {
+  background-image: url('https://www.casinoatlantico.es/wp-content/uploads/2018/09/poker.jpg');
+  /* cambia la ruta o usa una URL */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.carta {
+  background-color: white;
+  border: 2px solid #333;
+  border-radius: 10px;
+  width: 200px;
+  height: 280px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.6);
+}
+
+.valor-superior,
+.valor-inferior {
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.valor-superior {
+  top: 10px;
+  left: 10px;
+  text-align: left;
+}
+
+.valor-inferior {
+  bottom: 10px;
+  right: 10px;
+  text-align: right;
+  transform: rotate(180deg);
+}
+
+.centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 48px;
+  transform: translate(-50%, -50%);
+}
+
+.rojo {
+  color: red;
+}
+
+.negro {
+  color: black;
+}
+
+.boton-carta {
+  padding: 8px 14px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.boton-carta:hover {
+  background-color: #0056b3;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contador {
+  color: #f5f1f1;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: monospace;
+  background-color: #f9f5f51a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
 }
