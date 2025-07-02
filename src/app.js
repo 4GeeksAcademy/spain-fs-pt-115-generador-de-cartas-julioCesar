@@ -68,7 +68,7 @@ generarCarta();
 
 document.getElementById('nuevoBtn').addEventListener('click', () => {
   generarCarta();
-  iniciarTemporizador(); // 🔄 reinicia también el temporizador
+  iniciarTemporizador(); 
 });
 actualizarContador();
 setInterval(actualizarContador, 1000);
